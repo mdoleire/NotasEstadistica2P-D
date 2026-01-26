@@ -50,7 +50,7 @@ def cargar_datos():
         df['EDUCACION FISICA'] = limpiar_nota(12)
         df['PROMEDIO PARCIAL'] = limpiar_nota(13)
         df['FRANCES'] = limpiar_nota(14)
-        df['EDUCACIÓN EN LA FE'] = limpiar_nota(15)
+        df['EDUCACION EN LA FE'] = limpiar_nota(15)
         df['PROMEDIO FINAL'] = limpiar_nota(16)
         return df
     except Exception as e:
@@ -109,6 +109,7 @@ if st.button("Ver Resultados"):
                 st.error("Nombre incorrecto.")
         else:
             st.error("Lista no encontrada.")
+
 
 
 

@@ -97,7 +97,7 @@ if st.button("Ver Resultados"):
                 c8.metric("PEMEX", row['PEMEX'])
                 c9.metric("CONTABILIDAD", row['CONTABILIDAD'])
                 c10.metric("ESTADÍSTICA", row['ESTADISTICA'])
-                c11.metric("EDUCACION FISICA", row['EDUCACIÓN FISICA'])
+                c11.metric("EDUCACIÓN FÍSICA", row['EDUCACION FISICA'])
                 c12.metric("PROMEDIO PARCIAL", row['PROMEDIO PARCIAL'])
                 c13.metric("FRANCÉS", row['FRANCES'])
                 c14.metric("EDUCACIÓN EN LA FE", row['EDUCACION EN LA FE'])
@@ -109,6 +109,7 @@ if st.button("Ver Resultados"):
                 st.error("Nombre incorrecto.")
         else:
             st.error("Lista no encontrada.")
+
 
 
 

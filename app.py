@@ -37,21 +37,21 @@ def cargar_datos():
 
         # Ajusta estos índices si cambiaste columnas en el Excel
         # Recuerda: Columna 17 en Excel es índice 16 en Python
-        df['MATEMATICAS IV'] = limpiar_nota(1) 
-        df['DERECHO'] = limpiar_nota(2)
-        df['LITERATURA'] = limpiar_nota(3)
-        df['INGLES'] = limpiar_nota(4)
-        df['PSICOLOGIA'] = limpiar_nota(5)
-        df['GEOGRAFIA'] = limpiar_nota(6)
-        df['CIENCIAS SOCIALES'] = limpiar_nota(7)
-        df['PEMEX'] = limpiar_nota(8)
-        df['CONTABILIDAD'] = limpiar_nota(9)
-        df['ESTADISTICA'] = limpiar_nota(10)
-        df['EDUCACION FISICA'] = limpiar_nota(11)
-        df['PROMEDIO PARCIAL'] = limpiar_nota(12)
-        df['FRANCES'] = limpiar_nota(13)
-        df['EDUCACIÓN EN LA FE'] = limpiar_nota(14)
-        df['PROMEDIO FINAL'] = limpiar_nota(15)
+        df['MATEMATICAS IV'] = limpiar_nota(2) 
+        df['DERECHO'] = limpiar_nota(3)
+        df['LITERATURA'] = limpiar_nota(4)
+        df['INGLES'] = limpiar_nota(5)
+        df['PSICOLOGIA'] = limpiar_nota(6)
+        df['GEOGRAFIA'] = limpiar_nota(7)
+        df['CIENCIAS SOCIALES'] = limpiar_nota(8)
+        df['PEMEX'] = limpiar_nota(9)
+        df['CONTABILIDAD'] = limpiar_nota(10)
+        df['ESTADISTICA'] = limpiar_nota(11)
+        df['EDUCACION FISICA'] = limpiar_nota(12)
+        df['PROMEDIO PARCIAL'] = limpiar_nota(13)
+        df['FRANCES'] = limpiar_nota(14)
+        df['EDUCACIÓN EN LA FE'] = limpiar_nota(15)
+        df['PROMEDIO FINAL'] = limpiar_nota(16)
         return df
     except Exception as e:
         st.error(f"⚠️ Error al leer CSV: {e}")
@@ -109,6 +109,7 @@ if st.button("Ver Resultados"):
                 st.error("Nombre incorrecto.")
         else:
             st.error("Lista no encontrada.")
+
 
 
 

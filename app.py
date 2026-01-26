@@ -102,13 +102,12 @@ if st.button("Ver Resultados"):
                 c13.metric("FRANCÉS", row['FRANCES'])
                 c14.metric("EDUCACIÓN EN LA FE", row['EDUCACION EN LA FE'])
                 c15.metric("PROMEDIO FINAL", row['PROMEDIO FINAL'])
-                st.markdown("---")
-                st.metric("🎓 FINAL", row['promedio_final'])
                 #st.info(f"**Comentario del Profe:** {mensaje}")
             else:
                 st.error("Nombre incorrecto.")
         else:
             st.error("Lista no encontrada.")
+
 
 
 

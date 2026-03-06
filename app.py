@@ -124,17 +124,18 @@ if st.button("Ver Resultados"):
 
                 st.markdown("---")
                 
-                # Sección de conclusión
-                #col_final, col_msg = st.columns([1, 3])
-                #with col_final:
-                #     st.metric("🎓 CALIFICACIÓN FINAL", row['promedio_final'])
-                #with col_msg:
-                #     st.info(f"**Mensaje del Profesor:**\n\n{mensaje}")
+               # Sección de conclusión
+                col_final, col_msg = st.columns([1, 3])
+                with col_final:
+                     st.metric("🎓 CALIFICACIÓN FINAL", row['promedio_final'])
+                with col_msg:
+                     st.info(f"**Mensaje del Profesor:**\n\n{mensaje}")
                 
             else:
                 st.error("Nombre incorrecto. Verifica que coincida con el número de lista.")
         else:
             st.error("Número de lista no encontrado.")
+
 
 
 

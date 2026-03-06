@@ -13,7 +13,7 @@ except:
 # Configurar Gemini
 if API_KEY:
     genai.configure(api_key=API_KEY)
-    model = genai.GenerativeModel('gemini-2.5-flash')
+    model = genai.GenerativeModel('gemini-3-flash-preview')
 
 # --- FUNCIÓN PARA CARGAR DATOS ---
 def cargar_datos():
@@ -135,5 +135,6 @@ if st.button("Ver Resultados"):
                 st.error("Nombre incorrecto. Verifica que coincida con el número de lista.")
         else:
             st.error("Número de lista no encontrado.")
+
 
 

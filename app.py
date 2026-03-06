@@ -17,7 +17,7 @@ if API_KEY:
 
 # --- FUNCIÓN PARA CARGAR DATOS ---
 def cargar_datos():
-    archivo_nombre = "ReportePeriodo2.csv"
+    archivo_nombre = "ReportePeriodo3.csv"
     try:
         df = pd.read_csv(archivo_nombre)
         
@@ -39,8 +39,8 @@ def cargar_datos():
         df['MATEMATICAS IV'] = limpiar_nota(2) 
         df['DERECHO'] = limpiar_nota(3)
         df['LITERATURA'] = limpiar_nota(4)
-        df['INGLES'] = limpiar_nota(5)
-        df['PSICOLOGIA'] = limpiar_nota(6)
+        df['INGLÉS'] = limpiar_nota(5)
+        df['PSICOLOGÍA'] = limpiar_nota(6)
         df['GEOGRAFIA'] = limpiar_nota(7)
         df['CIENCIAS SOCIALES'] = limpiar_nota(8)
         df['PEMEX'] = limpiar_nota(9)
@@ -135,4 +135,5 @@ if st.button("Ver Resultados"):
                 st.error("Nombre incorrecto. Verifica que coincida con el número de lista.")
         else:
             st.error("Número de lista no encontrado.")
+
 

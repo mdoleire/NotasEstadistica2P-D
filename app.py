@@ -67,7 +67,7 @@ st.set_page_config(page_title="Calificaciones Estadística - Miraflores", page_i
 # Nota: Agregué layout="wide" para aprovechar más espacio en pantalla si es posible
 
 st.title("🦁 Consulta de Calificaciones")
-st.subheader("Periodo 2: Calificaciones 6° D")
+st.subheader("Periodo 3: Calificaciones 6° D")
 
 col1, col2 = st.columns(2)
 num = col1.text_input("Número de Lista:")
@@ -135,3 +135,4 @@ if st.button("Ver Resultados"):
                 st.error("Nombre incorrecto. Verifica que coincida con el número de lista.")
         else:
             st.error("Número de lista no encontrado.")
+

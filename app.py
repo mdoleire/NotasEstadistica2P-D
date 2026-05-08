@@ -17,7 +17,7 @@ if API_KEY:
 
 # --- FUNCIÓN PARA CARGAR DATOS ---
 def cargar_datos():
-    archivo_nombre = "ReportePeriodo3.csv"
+    archivo_nombre = "ReportePeriodo4.csv"
     try:
         df = pd.read_csv(archivo_nombre)
         
@@ -67,7 +67,7 @@ st.set_page_config(page_title="Calificaciones Estadística - Miraflores", page_i
 # Nota: Agregué layout="wide" para aprovechar más espacio en pantalla si es posible
 
 st.title("🦁 Consulta de Calificaciones")
-st.subheader("Periodo 3: Calificaciones 6° D")
+st.subheader("Periodo 4: Calificaciones 6° D")
 
 col1, col2 = st.columns(2)
 num = col1.text_input("Número de Lista:")
